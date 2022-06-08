@@ -15,6 +15,6 @@ app.add_middleware(
 )
 
 
-@app.get('/healthcheck')
+@app.get('/healthcheck', status_code=200)
 async def health_check():
     return {'message': 'Api running'}

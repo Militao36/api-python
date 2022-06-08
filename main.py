@@ -1,4 +1,4 @@
-from uvicorn.main import run
+from uvicorn import run
 from logging import getLogger
 
 from app.api import app as application
