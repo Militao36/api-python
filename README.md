@@ -7,8 +7,7 @@ Atualmente estou trabalhando em projetos usando python, porém apenas estou me "
 
 # Executar projeto local
 
-Você deve ter o `poetry`instalado localmente no seu pip. (https://python-poetry.org/docs/basic-usage/)
-Comandos:
+Você deve ter o `poetry`instalado localmente no seu pip. (https://python-poetry.org/docs/basic-usage/) 
 
 #### Passos
 ```
