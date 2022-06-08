@@ -1,15 +1,10 @@
-from typing import Union
+from uvicorn.main import run
+from logging import getLogger
 
-from fastapi import FastAPI
+from app.api import app as application
 
-app = FastAPI()
+logger = getLogger(__name__)
 
-
-@app.get("/")
-def read_root():
-    return {"Hello": "World"}
-
-
-@app.get("/items/{item_id}")
-def read_item(item_id: int, q: Union[str, None] = None):
-    return {"item_id": item_id, "q": q}
+if __name__ == "__main__":
+    logger.info("Starting API port 8000")
+    run("main:application", host="0.0.0.0", port=8000, workers=1, reload=True)
