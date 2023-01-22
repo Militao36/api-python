@@ -1,7 +1,7 @@
 from uvicorn import run
 from logging import getLogger
 
-from app.api import app as application
+from app.api import app
 
 logger = getLogger(__name__)
 
